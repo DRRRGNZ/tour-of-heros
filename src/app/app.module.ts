@@ -1,26 +1,25 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
-import { Hero } from './hero.service/hero.service.component';
+import { MessagesComponent } from './messages.component/messages.component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-    Hero.ServiceComponent
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  exports: [
-    AppComponent
+  providers: [
+    // no need to place any providers due to the `providedIn` flag...
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }

@@ -48,3 +48,7 @@ a {
 a:hover {
   background-color: #000;
 }
+.bg{
+  width: 2000px;
+  height: 800px;
+}

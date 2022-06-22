@@ -1,14 +1,16 @@
-<h1>{{title}}</h1>
+<div class="titel">
+<h1> Rent a Hero - We safe your City today</h1>
 
 <img class="logo" src="https://www.pngkey.com/png/full/665-6653059_superhero-icon-png.png">
-
+</div>
 
 <mat-toolbar>
-  <button mat-icon-button class="example-icon">
-    <mat-icon> <a routerLink="/dashboard">DB</a> </mat-icon>
-  </button>
 
-  <button mat-icon-button class="example-icon favorite-icon">  <mat-icon> <a routerLink="/heroes">H</a> </mat-icon> </button>
+  <button class="nav" mat-icon-button> <mat-icon> <a routerLink="/dashboard">DB</a> </mat-icon> </button>
+
+
+  <button class="nav" mat-icon-button> <mat-icon> <a routerLink="/heroes">H</a> </mat-icon> </button>
+
 </mat-toolbar>
 
 <router-outlet></router-outlet>

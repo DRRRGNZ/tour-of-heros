@@ -8,21 +8,21 @@ import { Hero } from './hero';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const heroes: Hero[] = [
-      { id: 12, name: 'Dr. Nice' },
-      { id: 13, name: 'Bombastic' },
-      { id: 14, name: 'Superman' },
-      { id: 15, name: 'Magneto' },
-      { id: 16, name: 'RubberMan' },
-      { id: 17, name: 'DynamateGirl' },
-      { id: 18, name: 'MinuteMan' },
-      { id: 19, name: 'Magma' },
-      { id: 20, name: 'Tornado'},
-      { id: 21, name: 'Seth Solar'},
-      { id: 22, name: 'Salomon Solar'},
-      { id: 23, name: 'Thanatos'},
-      { id: 24, name: 'Minuteman'},
-      { id: 25, name: 'PortalGirl'},
-      { id: 26, name: 'Seismic'},
+      {id: 12, name: 'Dr. Nice'},
+      {id: 13, name: 'Bombastic'},
+      {id: 14, name: 'Superman'},
+      {id: 15, name: 'Magneto'},
+      {id: 16, name: 'RubberMan'},
+      {id: 17, name: 'DynamateGirl'},
+      {id: 18, name: 'MinuteMan'},
+      {id: 19, name: 'Magma'},
+      {id: 20, name: 'Tornado'},
+      {id: 21, name: 'Seth Solar'},
+      {id: 22, name: 'Salomon Solar'},
+      {id: 23, name: 'Thanatos'},
+      {id: 24, name: 'Minuteman'},
+      {id: 25, name: 'PortalGirl'},
+      {id: 26, name: 'Seismic'},
     ];
     return {heroes};
   }
@@ -36,4 +36,4 @@ export class InMemoryDataService implements InMemoryDbService {
     return heroes.length > 0 ? Math.max(...heroes.map(hero => hero.id)) + 1 : 11;
   }
 
-}
+ }

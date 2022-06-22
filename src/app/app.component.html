@@ -1,7 +1,15 @@
 <h1>{{title}}</h1>
-<nav>
-  <a routerLink="/dashboard">Dashboard</a>
-  <a routerLink="/heroes">Heroes</a>
-</nav>
+
+<img class="logo" src="https://www.pngkey.com/png/full/665-6653059_superhero-icon-png.png">
+
+
+<mat-toolbar>
+  <button mat-icon-button class="example-icon">
+    <mat-icon> <a routerLink="/dashboard">DB</a> </mat-icon>
+  </button>
+
+  <button mat-icon-button class="example-icon favorite-icon">  <mat-icon> <a routerLink="/heroes">H</a> </mat-icon> </button>
+</mat-toolbar>
+
 <router-outlet></router-outlet>
 <app-messages></app-messages>
